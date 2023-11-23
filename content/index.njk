@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+---
+
+{% set homecss %} {% include "styles/home.css" %} {% endset %}
+<style>
+	{{ homecss | cssmin | safe }}
+	@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500&family=Spline+Sans+Mono:wght@500&display=swap');
+</style>
+
+<section>
+	<h1 class="title">Stuy Bioinformatics</h1>
+	<div id="content" style="margin-top: 120px;">
+		<p>
+			Stuy Bioinformatics creates a space where students express their interests, work on projects, and publish articles on the applications of computer science in biology.
+		</p>
+	</div>
+	<div id="social_media_links">
+		<p>
+			Join our
+			<a href="https://stuyactivities.org/bioinformatics"> StuyActivities </a>
+		</p>
+		<p>
+			Join our
+			<a href="https://discord.gg/AxcJxB7yAQ">Discord</a>
+		</p>
+		<p>
+			Explore our 
+			<a href="/posts">publication</a>!
+		</p>
+	</div>
+
+	<a href="team.html"><img src="https://64.media.tumblr.com/73b2de71c52b2baa1ea8652a32d79d69/tumblr_mxi27bHFn81svwlszo1_500.gif" alt="Stuy Bioinformatics" width="100%" class="image2">
+
+</section>

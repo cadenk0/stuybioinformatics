@@ -1,0 +1,41 @@
+nav {
+	text-align: center;
+	display: flex;
+	max-width: 400px;
+	justify-content: space-around;
+	margin: auto;
+	align-items: center;
+}
+
+.image1 {
+	display: inline-block;
+	width:80px; 
+	height:80px;
+}
+
+.image2 {
+	display: inline-block;
+	width:500px; 
+	height:500px;
+}
+
+.image1:hover {
+	animation: rotate-btn 0.5s linear 1;
+	-webkit-animation: rotate-btn 0.5s linear 1;
+
+}
+
+@keyframes rotate-btn {
+0% {
+	transform: rotate(0);
+}
+100% {
+	transform: rotate(360deg);
+}
+}
+
+.nav_link {
+	font-size: 1.5rem;
+	text-decoration: underline;
+	flex: 1;
+}

@@ -1,0 +1,20 @@
+{% set navbarcss %} {% include "styles/navbar.css" %} {% endset %}
+<style>
+	{{ navbarcss | cssmin | safe }}
+</style>
+
+<nav id="nav">
+    <div style="margin-top: 250px;"> 
+
+        <a class="nav_link" href="/posts">
+            articles
+        </a>
+        <a class="nav_link" href="/">
+        <img src="favicon.png" alt="Stuy Bioinformatics" class="image1">
+        </a>
+        <a class="nav_link" href="/about">
+            projects
+        </a>
+    </div> 
+
+</nav>

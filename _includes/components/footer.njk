@@ -1,0 +1,7 @@
+{% set footercss %} {% include "styles/footer.css" %} {% endset %}
+<style>
+	{{ footercss | cssmin | safe }}
+</style>
+
+<footer id="footer">
+</footer>
